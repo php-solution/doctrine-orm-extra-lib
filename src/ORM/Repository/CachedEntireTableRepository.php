@@ -66,7 +66,7 @@ class CachedEntireTableRepository extends EntireTableRepository
     /**
      * {@inheritdoc}
      */
-    public function addEntities(array &$entities): void
+    public function addEntities(array $entities): void
     {
         parent::addEntities($entities);
         $this->getCacheDriver()->save($this->getEntityName(), $this->allList);

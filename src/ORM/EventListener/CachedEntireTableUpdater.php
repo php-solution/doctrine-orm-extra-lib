@@ -75,12 +75,7 @@ class CachedEntireTableUpdater implements EventSubscriber
             return;
         }
         $em = $args->getEntityManager();
-        $removedCacheClasses = [];
         foreach ($this->cachedEntityClasses as $entityClass) {
-            if (in_array($entityClass, $removedCacheClasses)) {
-                continue;
-            }
-            $removedCacheClasses[] = $entityClass;
             $em->getCache()->evictEntityRegion($entityClass);
             $repository = $em->getRepository($entityClass);
             if ($repository instanceof CachedEntireTableRepository) {
