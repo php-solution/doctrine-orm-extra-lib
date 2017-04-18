@@ -15,4 +15,3 @@ $ composer require php-solution/doctrine-orm-extra-lib
 
     * **EventListener** - Listeners for working with cached tables 
     * **Query** - Additional MySQL statements
-    * **Repository** - Repositories for caching tables

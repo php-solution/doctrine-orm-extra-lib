@@ -6,9 +6,10 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 
 /**
- * CacheMappingListener
+ * This listener make entities cacheable based on $cacheConfig.
+ * $cacheConfig should be populated via setCacheMap method, during framework initialization
  */
-class CacheMappingListener implements EventSubscriber
+class CacheEntityListener implements EventSubscriber
 {
     /**
      * @var array
@@ -34,7 +35,6 @@ class CacheMappingListener implements EventSubscriber
     }
 
     /**
-     * Processes event and resolves new target entity names.
      * @internal this is an event callback, and should not be called directly
      *
      * @param LoadClassMetadataEventArgs $args
