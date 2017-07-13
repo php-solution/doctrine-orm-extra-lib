@@ -8,32 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait CreatedAtTrait
 {
+    use \PhpSolution\FrequentField\Traits\CreatedAtTrait;
+
     /**
      * @ORM\Column(name="`created_at`", type="datetime", nullable=false)
      *
-     * @var \DateTime
+     * @var \DateTime|null
      */
     protected $createdAt;
-
-    /**
-     * @return \DateTime
-     */
-    public function getCreatedAt(): \DateTime
-    {
-        return $this->createdAt;
-    }
-
-    /**
-     * @param \DateTime $createdAt
-     *
-     * @return $this
-     */
-    public function setCreatedAt(\DateTime $createdAt = null)
-    {
-        $this->createdAt = $createdAt;
-
-        return $this;
-    }
 
     /**
      * @ORM\PrePersist

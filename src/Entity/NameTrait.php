@@ -8,30 +8,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait NameTrait
 {
+    use \PhpSolution\FrequentField\Traits\NameTrait;
+
     /**
-     * @ORM\Column(name="`name`", type="string", nullable=false)
+     * @ORM\Column(name="`name`", type="string", nullable=true)
      *
      * @var string
      */
     protected $name;
-
-    /**
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     *
-     * @return $this
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
 }
