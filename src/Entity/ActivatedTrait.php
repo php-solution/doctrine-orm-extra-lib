@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait ActivatedTrait
 {
-    use \PhpSolution\FrequentField\Traits\ActivatedTrait;
+    use \PhpSolution\StdLib\FrequentField\Traits\ActivatedTrait;
 
     /**
      * @ORM\Column(name="`active`", type="boolean", nullable=false, options={"default"="0"})

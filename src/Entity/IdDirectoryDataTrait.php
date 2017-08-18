@@ -2,7 +2,7 @@
 namespace PhpSolution\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use PhpSolution\FrequentField\Traits\IdTrait;
+use PhpSolution\StdLib\FrequentField\Traits\IdTrait;
 
 /**
  * IdDirectoryDataTrait

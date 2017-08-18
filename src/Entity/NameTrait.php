@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait NameTrait
 {
-    use \PhpSolution\FrequentField\Traits\NameTrait;
+    use \PhpSolution\StdLib\FrequentField\Traits\NameTrait;
 
     /**
      * @ORM\Column(name="`name`", type="string", nullable=true)

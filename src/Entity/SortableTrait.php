@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait SortableTrait
 {
-    use \PhpSolution\FrequentField\Traits\SortableTrait;
+    use \PhpSolution\StdLib\FrequentField\Traits\SortableTrait;
 
     /**
      * @ORM\Column(name="`sort`", type="smallint", nullable=false, options={"default"="0", "unsigned"="true"})

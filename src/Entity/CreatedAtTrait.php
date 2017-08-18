@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait CreatedAtTrait
 {
-    use \PhpSolution\FrequentField\Traits\CreatedAtTrait;
+    use \PhpSolution\StdLib\FrequentField\Traits\CreatedAtTrait;
 
     /**
      * @ORM\Column(name="`created_at`", type="datetime", nullable=false)

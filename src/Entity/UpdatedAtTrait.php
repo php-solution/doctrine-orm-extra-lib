@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 trait UpdatedAtTrait
 {
-    use \PhpSolution\FrequentField\Traits\UpdatedAtTrait;
+    use \PhpSolution\StdLib\FrequentField\Traits\UpdatedAtTrait;
 
     /**
      * @ORM\Column(name="`updated_at`", type="datetime", nullable=true)
