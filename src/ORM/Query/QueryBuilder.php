@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSolution\Doctrine\ORM;
+namespace PhpSolution\Doctrine\ORM\Query;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\QueryBuilder as BaseQueryBuilder;
