@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpSolution\Doctrine\Aware;
 
 use Doctrine\Common\Persistence\ObjectManager;

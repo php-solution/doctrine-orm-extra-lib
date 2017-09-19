@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpSolution\Doctrine\ORM\Query\AST;
 
 use Doctrine\ORM\Query\AST\ArithmeticExpression;

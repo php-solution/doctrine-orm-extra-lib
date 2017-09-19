@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpSolution\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -10,7 +11,7 @@ trait IdGeneratedTrait
 {
     /**
      * @ORM\Id
-     * @ORM\Column(name="`id`", type="integer", nullable=false, options={"unsigned": true})
+     * @ORM\Column(name="id", type="integer", nullable=false, options={"unsigned": true})
      * @ORM\GeneratedValue(strategy="AUTO")
      *
      * @var int

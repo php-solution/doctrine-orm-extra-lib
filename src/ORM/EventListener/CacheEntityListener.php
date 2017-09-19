@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpSolution\Doctrine\ORM\EventListener;
 
 use Doctrine\Common\EventSubscriber;
