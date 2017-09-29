@@ -12,7 +12,7 @@ trait NameTrait
     use \PhpSolution\StdLib\FrequentField\Traits\NameTrait;
 
     /**
-     * @ORM\Column(name="`name`", type="string", nullable=true)
+     * @ORM\Column(name="`name`", type="string", length=255, nullable=true)
      *
      * @var string
      */

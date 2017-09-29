@@ -12,7 +12,7 @@ trait TitleTrait
     use \PhpSolution\StdLib\FrequentField\Traits\TitleTrait;
 
     /**
-     * @ORM\Column(name="`title`", type="string", nullable=true)
+     * @ORM\Column(name="`title`", type="string", length=255, nullable=true)
      *
      * @var null|string
      */

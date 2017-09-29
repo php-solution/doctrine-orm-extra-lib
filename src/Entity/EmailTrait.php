@@ -12,7 +12,7 @@ trait EmailTrait
     use \PhpSolution\StdLib\FrequentField\Traits\EmailTrait;
 
     /**
-     * @ORM\Column(name="`email`", type="string", nullable=false)
+     * @ORM\Column(name="`email`", type="string", length=255, nullable=false)
      *
      * @var string
      */
